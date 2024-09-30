@@ -116,18 +116,21 @@ h1{
 
 .experiencia .columna{
     padding: 20px;
-    border: 2px solid #B4BEC9;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.2s ease-in;
     background-color: white;
-    gap: 0;
+    
 }
 
-.experiencia .columna:hover{
-    
+.experiencia .card {
+    transition: background-color 0.5s ease; /* Ajusta el tiempo y la función de transición según lo desees */
+}
+
+.experiencia .card:hover {
     background-color: #DEEFE7;
+    cursor: pointer;
 }
 
 .experiencia i {
@@ -189,8 +192,18 @@ h1{
     font-size: 1.3rem;
 }
 
+.contacto form{
+    
+    text-align: start;
+}
 
+.contacto input, textarea{
+    padding-bottom: 1rem;
+}
 
+.contacto button{
+    align-items:center;
+}
 #contacto{
     font-family: 'Roboto', sans-serif;
 }
