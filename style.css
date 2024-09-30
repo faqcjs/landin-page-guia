@@ -1,0 +1,274 @@
+/* Globales */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+.seccion-oscura{
+    color: white;
+    background-color: #002333 ;
+}
+
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Roboto', cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
+}
+/* Navbar */
+
+.navbar{
+    padding: 1rem;
+    
+    background-color: f5f6f7;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Hero */
+
+.hero {
+    height: 540px; /* Hace que la sección hero ocupe toda la altura de la pantalla */
+    overflow: hidden;
+    
+}
+.carousel-item{
+    height: 100vh;
+}
+
+
+.carousel-item img {
+    object-fit: cover; /* Escala las imágenes para que cubran todo el contenedor sin distorsión */
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    z-index: 10; /* Asegura que el texto esté por encima del carrusel */
+}
+
+.carousel-inner {
+    z-index: 1; /* Asegura que el carrusel esté detrás del texto */
+}
+
+.hero-text h1, .hero-text p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para que se vea mejor sobre las imágenes */
+}
+
+.nombre{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.frase{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* sobre mi */
+
+
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+/* Experiencuia */
+
+.experiencia{
+    padding: 40px 40px 60px 40px; 
+    
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #B4BEC9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    background-color: white;
+    gap: 0;
+}
+
+.experiencia .columna:hover{
+    
+    background-color: #DEEFE7;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #DEEFE7;
+    background-color: #002333 ;
+    padding: 10px 20px;
+    
+    
+}   
+
+.exp-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.exp-laboral li{
+    list-style: none;
+}
+
+.badges-contender{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+
+
+/* Seccion contacto */
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 100px;
+    padding: 20px;
+
+}
+
+.rectangulo{
+    margin-top: -4rem;
+    background-color: #159A9C;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 1px rgb(173, 172, 172);
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+#contacto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Footer */
+
+footer{
+    min-height: 400px;
+
+}
+
+.footer-icon{
+    font-size: 5rem;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechos-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 400px) {
+    .overlay p{
+        font-size: 20px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-img{
+        max-width: 600px;
+    }
+   
+}
