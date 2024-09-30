@@ -246,5 +246,27 @@
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <!-- Botón flotante -->
+<a href="#" id="scrollToTop" class="btn btn-primary" style="display: none;"><i class="bi bi-arrow-up"></i></a>
+<script>
+    // Mostrar el botón cuando el usuario se desplaza hacia abajo
+    window.onscroll = function() {
+        const scrollToTopButton = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollToTopButton.style.display = "flex";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+    };
+
+    // Desplazar suavemente hacia arriba al hacer clic en el botón
+    document.getElementById("scrollToTop").addEventListener("click", function(event) {
+        event.preventDefault(); // Evitar comportamiento predeterminado del enlace
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Desplazamiento suave
+        });
+    });
+</script>
 </body>
 </html>
